@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Handjet:wght@100..900&family=Sofia&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="loading" class="d-none justify-content-center align-items-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar me-3">
+        <ul>
+            <li><a href="#search-part" id="searchAnc" onclick="">Search</a></li>
+            <li><a href="#categories" id="cateAnc">categories</a></li>
+            <li><a href="#" id="areaAnc">Area</a></li>
+            <li><a href="#" id="ingAnc">Ingredients</a></li>
+            <li><a href="#" id="conAnc">Contact US</a></li>
+        </ul>
+        <button class="sidebarBtn">
+            <span></span>
+        </button>
+    </div>
+    <section id="search-part" class="m-auto d-none">
+        <div class="container m-auto">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" id="searchInput" placeholder="Search for a meal by word...">
+                    <button class="btn btn-danger" id="searchBtn">Search</button>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="searchInput2" maxlength="1" placeholder="Search for a meal by letter...">
+                    <button class="btn btn-danger" id="searchBtn2">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="first-page" class="container">
+        <div class="row g-2" id="row-data1">
+
+        </div>
+    </section>
+    <section id="meal-description" class="d-none">
+        <i class="fa-solid fa-close fa-2x text-danger" id="closeBtn"></i>
+        <div class="container my-3">
+
+            <div class="row" id="row-data2">
+
+            </div>
+        </div>
+
+    </section>
+    <section id="categories" class=" container d-none">
+
+        <div class="row g-5" id="row-data3">
+
+        </div>
+    </section>
+
+
+    <section id="Area" class="container d-none">
+        <div class="row g-5" id="row-data4">
+
+        </div>
+    </section>
+
+    <section id="ingred" class="container d-none">
+        <div class="row g-5" id="row-data5">
+
+        </div>
+    </section>
+
+
+    <div class="container mt-5 d-none" id="contact">
+        <form id="signupForm">
+            <div class="form-group">
+                <input type="text" id="name" class="form-control" placeholder="Enter Your Name">
+                <p id="nameError" class="error-message">Please enter a valid name (letters only).</p>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" class="form-control" placeholder="Enter Your Email">
+                <p id="emailError" class="error-message">Please enter a valid email.</p>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" class="form-control" placeholder="Enter Your Phone">
+                <p id="phoneError" class="error-message">Please enter a valid phone number (digits only).</p>
+            </div>
+            <div class="form-group">
+                <input type="number" id="age" class="form-control" placeholder="Enter Your Age">
+                <p id="ageError" class="error-message">Age must be between 18 and 100.</p>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" class="form-control" placeholder="Enter Your Password">
+                <p id="passwordError" class="error-message">Password must be at least 6 characters.</p>
+            </div>
+            <div class="form-group">
+                <input type="password" id="repassword" class="form-control" placeholder="Re-enter Your Password">
+                <p id="repasswordError" class="error-message">Passwords do not match.</p>
+            </div>
+            <button type="submit" id="submitBtn" class="btn btn-danger" disabled>Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
